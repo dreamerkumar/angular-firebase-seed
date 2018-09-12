@@ -1,0 +1,9 @@
+<div *ngIf="user"
+     class="user-profile">
+    <h1>User Profile</h1>
+    <img class="photo"
+         [src]="user?.photoURL">
+    <div class="displayName">{{ user?.displayName}}</div>
+    <div class="email">{{ user?.email}}</div>
+    <div class="phoneNumber">{{ user?.phoneNumber}}</div>
+</div>

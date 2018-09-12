@@ -1,0 +1,21 @@
+<div class="toolbar">
+    <div class="branding">
+        <div (click)="goToHome()">Branding</div>
+    </div>
+    <div class="user-info">
+        <ng-container *ngIf="user; else noUser">
+            <div (click)="goToUserData()">Data</div>
+            <div *ngIf="user?.displayName"
+                 (click)="goToUserProfile()">{{ user?.displayName }}</div>
+            <img (click)="goToUserProfile()"
+                 [src]="user?.photoURL"
+                 *ngIf="user?.photoURL"
+                 class="photo">
+            <vk-logout></vk-logout>
+        </ng-container>
+        <ng-template #noUser>
+            <div (click)="goToLogin()"
+                 *ngIf="router.url !== '/login'">Sign In</div>
+        </ng-template>
+    </div>
+</div>

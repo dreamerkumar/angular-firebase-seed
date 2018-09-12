@@ -1,0 +1,36 @@
+{
+  "npmScope": "angular6",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": "*",
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "myapp": {
+      "tags": []
+    },
+    "myapp-e2e": {
+      "tags": []
+    },
+    "firebase": {
+      "tags": []
+    },
+    "vk-firebase": {
+      "tags": []
+    },
+    "vk-authentication": {
+      "tags": []
+    },
+    "vk-user-profile": {
+      "tags": []
+    },
+    "vk-user-toolbar": {
+      "tags": []
+    },
+    "vk-user-data": {
+      "tags": []
+    }
+  }
+}

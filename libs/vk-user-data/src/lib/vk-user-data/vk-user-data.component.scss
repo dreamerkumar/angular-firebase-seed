@@ -1,0 +1,27 @@
+.toolbar {
+  background-color: #eee;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .branding {
+    > * {
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  }
+  .user-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    > * {
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    .photo {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+    }
+  }
+}

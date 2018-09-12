@@ -1,0 +1,7 @@
+<ul>
+    <li *ngFor="let entry of userData$ | async">{{entry.dataItem}}</li>
+</ul>
+<p></p>
+<input type="textbox"
+       [(ngModel)]="dataItemToAdd">
+<button (click)="add()">Add Data Item</button>

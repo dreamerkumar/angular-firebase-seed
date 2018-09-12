@@ -1,0 +1,92 @@
+<h1 id="seedangular6projectwithfirebasegoogleauthenticationandnrwl">Seed Angular 6 project with Firebase, Google Authentication and Nrwl</h1>
+
+<h2 id="features">Features</h2>
+
+<p>This seed project can be useful if you are considering creating an app that stores user data with a Firebase backend. </p>
+
+<p>It has just enough to support the below capabilities with very little css or any theme dependencies. Start here and then style the page and components the way you want. </p>
+
+<ul>
+<li>A sign in page is provided to login with Google as an example. Other social logins can be added in a similar fashion.</li>
+
+<li>A user can also login anonymously if he just wants to test out the app.</li>
+
+<li>The app shell has a top toolbar with options to sign in, view data or logout.</li>
+
+<li>A sample data page demonstrates how to create items which are stored against the authenticated user. This data is private to the logged in user.</li>
+
+<li>A profile page shows the logged in user details from his social profile. </li>
+</ul>
+
+<h2 id="installationandusage">Installation and Usage</h2>
+
+<h3 id="installation">Installation</h3>
+
+<ul>
+<li><code>git clone</code> or download the project files. </li>
+
+<li>Make sure you are using Node 10 or above. </li>
+
+<li>Run <code>npm install</code> via terminal on the project folder to install all the dependencies.</li>
+
+<li>Go to <a href="https://console.firebase.google.com/">Firebase Console</a> and create a new project</li>
+
+<li>Go to project settings, and copy the required key values to your <code>environment.ts</code> and <code>environment.prod.ts</code> files in the folder <code>your-app-root/apps/myapp/src/environments</code></li>
+
+<li>From the <code>Cloud Messaging tab</code> in settings, copy the message sender id and update the above two environment files with that as well.</li>
+
+<li>Run <code>npm start</code> to start the app on localhost and port 4200.</li>
+
+<li>See the Nrwl section below for creating additional apps, building, running tests etc.</li>
+
+<li>If you are using Firebase command line tool to deploy to firebase, update your deployed app name in <code>.firebasesrc</code> file </li>
+</ul>
+
+<h2 id="firebase">Firebase</h2>
+
+<p>Firebase is a comprehensive mobile development platform to build apps fast without managing infrastructure. It comes with a lot of incredible features on the get go. Checkout <a href="https://firebase.google.com/">Firebase</a></p>
+
+<h2 id="sociallogin">Social Login</h2>
+
+<p>Starting with a social login is a faster way to get your app to market. So this app supports a one click google login to get you started. You can later add support for other social logins or login using username and password. Building a complete authentication system with login, password reset and password change features is cumbersome to implement and can create security holes if not implemented properly. It is also added friction for a new user to register himself, as compared to logging in with a provider he is already registered with.</p>
+
+<h2 id="nrwl">Nrwl</h2>
+
+<p>Nrwl is an open source toolkit for enterprise Angular applications.</p>
+
+<p>Nx is designed to help you create and build enterprise grade Angular applications. It provides an opinionated approach to application project structure and patterns.</p>
+
+<p>Learn more about Nrwl at <a href="https://nrwl.io/nx">Nrwl Nx</a>.</p>
+
+<h3 id="creatingandrunningappsandlibrariesusingnrwl">Creating and running apps and libraries using Nrwl</h3>
+
+<p><a href="http://nrwl.io/nx">Watch a 5-minute video on how to get started with Nx.</a></p>
+
+<h3 id="generateapplication">Generate application</h3>
+
+<p>Run <code>ng generate app myapp</code> to generate an application. When using Nx, you can create multiple applications and libraries in the same CLI workspace. Read more <a href="http://nrwl.io/nx">here</a>.</p>
+
+<h3 id="developmentserver">Development server</h3>
+
+<p>Run <code>ng serve --app=myapp</code> for a dev server. Navigate to <code>http://localhost:4200/</code>. The app will automatically reload if you change any of the source files.</p>
+
+<h3 id="codescaffolding">Code scaffolding</h3>
+
+<p>Run <code>ng generate component component-name --app=myapp</code> to generate a new component. You can also use <code>ng generate directive|pipe|service|class|guard|interface|enum|module</code>.</p>
+
+<h3 id="build">Build</h3>
+
+<p>Run <code>ng build --app=myapp</code> to build the project. The build artifacts will be stored in the <code>dist/</code> directory. Use the <code>-prod</code> flag for a production build.</p>
+
+<h3 id="runningunittests">Running unit tests</h3>
+
+<p>Run <code>ng test</code> to execute the unit tests via <a href="https://karma-runner.github.io">Karma</a>.</p>
+
+<h3 id="runningendtoendtests">Running end-to-end tests</h3>
+
+<p>Run <code>ng e2e</code> to execute the end-to-end tests via <a href="http://www.protractortest.org/">Protractor</a>.
+Before running the tests make sure you are serving the app via <code>ng serve</code>.</p>
+
+<h3 id="furtherhelp">Further help</h3>
+
+<p>To get more help on the Angular CLI use <code>ng help</code> or go check out the <a href="https://github.com/angular/angular-cli/blob/master/README.md">Angular CLI README</a>.</p>

@@ -1,0 +1,1 @@
+export * from './vk-user-toolbar.component';

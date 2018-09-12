@@ -1,0 +1,40 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es5",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@angular6/vk-firebase": [
+        "libs/vk-firebase/src/index.ts"
+      ],
+      "@angular6/vk-authentication": [
+        "libs/vk-authentication/src/index.ts"
+      ],
+      "@angular6/vk-user-profile": [
+        "libs/vk-user-profile/src/index.ts"
+      ],
+      "@angular6/vk-user-toolbar": [
+        "libs/vk-user-toolbar/src/index.ts"
+      ],
+      "@angular6/vk-user-data": [
+        "libs/vk-user-data/src/index.ts"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
+}
